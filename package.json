@@ -4,11 +4,14 @@
   "description": "Proyecto de testeo para webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:loaders": "webpack --config ./loaders/webpack.config.js"
   },
-  "author": "",
+  "author": "Wilder Lizama <wilder.lizama@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.19.0",
     "webpack": "^3.10.0"
   }
 }
