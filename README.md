@@ -8,5 +8,6 @@ Instalar dependencias ``npm install``
 
 **Pruebas**
 
-- loaders ``npm run build:loaders``
+- Loaders ``npm run build:loaders``
 
+- Plugins ``npm run build:plugins``

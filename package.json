@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:loaders": "webpack --config ./loaders/webpack.config.js"
+    "build:loaders": "webpack --config ./loaders/webpack.config.js",
+    "build:plugins": "webpack --config ./plugins/webpack.config.js"
   },
   "author": "Wilder Lizama <wilder.lizama@gmail.com>",
   "license": "MIT",
