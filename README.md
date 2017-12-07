@@ -11,3 +11,9 @@ Instalar dependencias ``npm install``
 - Loaders ``npm run build:loaders``
 
 - Plugins ``npm run build:plugins``
+
+- Multiples Entry Points ``npm run build:multi:ep``
+
+- DevServer ``npm run build:dev``
+
+
