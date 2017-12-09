@@ -2,7 +2,10 @@ const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-  entry : path.resolve(__dirname, 'src/js/index.js'),
+  entry : {
+    index    : path.resolve(__dirname, 'src/js/index.js'),
+    urlLoadersFonts : path.resolve(__dirname, 'src/js/url-loader-fonts.js')
+  },
   output : {
     path : path.resolve(__dirname, 'dist'),
     filename : 'js/[name].js'
@@ -17,7 +20,7 @@ module.exports = {
         })
       },
       {
-        test : /\.(png|jpg|gif)$/,
+        test : /\.(png|jpg|gif|woff|eot|ttf|svg)$/,
         use : [
           {
             loader : 'url-loader',
