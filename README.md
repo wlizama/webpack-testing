@@ -17,3 +17,6 @@ Instalar dependencias ``npm install``
 - DevServer ``npm run build:dev``
 
 - Babel es2015 ``npm run build:babel:es2015``
+
+- URL loader ``npm run build:url-loader``
+
