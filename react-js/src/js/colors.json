@@ -1,0 +1,12 @@
+{
+  "colors" : [
+    {"name" : "Yellow", "hex" : "#FFEB3B" },
+    {"name" : "Blue", "hex" : "#2196F3" },
+    {"name" : "Red", "hex" : "#F44336" },
+    {"name" : "Green", "hex" : "#009688" },
+    {"name" : "Orange", "hex" : "#FF9800" },
+    {"name" : "Gray", "hex" : "#9E9E9E" },
+    {"name" : "White", "hex" : "#FFFFFF" },
+    {"name" : "Black", "hex" : "#000000" }
+  ]
+}
