@@ -20,3 +20,4 @@ Instalar dependencias ``npm install``
 
 - URL loader ``npm run build:url-loader``
 
+- JSON loader ``npm run build:json-loader``

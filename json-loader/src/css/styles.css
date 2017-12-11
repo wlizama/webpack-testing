@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #303030;
+  color: #FFFFFF;
+  height: 100vh;
+  margin : 0;
+  font-size: 30px; 
+}
+
+.script-list .name{
+    color : #3DA7F9;
+    font-weight: bold
+}
+.script-list .script{
+    color: #FFFFFF;
+    margin-left: 5px;
+    font-style: italic;
+}

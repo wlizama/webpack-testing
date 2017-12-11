@@ -1,0 +1,11 @@
+{
+  "scripts" : [
+    {"name" : "test", "script" : "echo \"Error: no test specified\" && exit 1" },
+    {"name" : "build:loaders", "script" : "webpack --config ./loaders/webpack.config.js" },
+    {"name" : "build:plugins", "script" : "webpack --config ./plugins/webpack.config.js" },
+    {"name" : "build:multi:ep", "script" : "webpack --config ./multi-entry-points/webpack.config.js" },
+    {"name" : "build:dev", "script" : "webpack-dev-server --config ./dev-server/webpack.config.js" },
+    {"name" : "build:babel:es2015", "script" : "webpack --config ./babel-loader-es2015/webpack.config.js" },
+    {"name" : "build:url-loader", "script" : "webpack --config ./url-loader/webpack.config.js" }
+  ]
+}
