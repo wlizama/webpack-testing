@@ -1,0 +1,14 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #DCA8FF;
+  color : #FFF;
+  height: 100vh;
+  margin : 0;
+  font-size: 20px;
+}
+.video-class{
+  width: 60%;
+}

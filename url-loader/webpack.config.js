@@ -4,11 +4,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 module.exports = {
   entry : {
     index    : path.resolve(__dirname, 'src/js/index.js'),
-    urlLoadersFonts : path.resolve(__dirname, 'src/js/url-loader-fonts.js')
+    urlLoadersFonts : path.resolve(__dirname, 'src/js/url-loader-fonts.js'),
+    urlLoadersVideos : path.resolve(__dirname, 'src/js/url-loader-videos.js')
   },
   output : {
     path : path.resolve(__dirname, 'dist'),
-    filename : 'js/[name].js'
+    filename : 'js/[name].js',
+    publicPath : './dist/'
   },
   module : {
     rules : [
@@ -26,6 +28,19 @@ module.exports = {
             loader : 'url-loader',
             options : {
               limit : 95000
+            }
+          }
+        ]
+      },
+      {
+        test : /\.(mp4)$/,
+        use : [
+          {
+            loader : 'url-loader',
+            options : {
+              limit : 9900000,
+              name : 'videos/[name].[hash].[ext]'
+
             }
           }
         ]
