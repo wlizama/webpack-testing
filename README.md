@@ -23,3 +23,6 @@ Instalar dependencias ``npm install``
 - JSON loader ``npm run build:json-loader``
 
 - Babel loader - ReactJS ``npm run build:reactjs``
+
+- Babel loaders CSS ``npm run build:loaders:css``
+
