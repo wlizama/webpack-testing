@@ -3,7 +3,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry : {
-    SASSLoader    : path.resolve(__dirname, 'src/js/SASSLoader.js')
+    SASSLoader  : path.resolve(__dirname, 'src/js/SASSLoader.js'),
+    StylusLoader: path.resolve(__dirname, 'src/js/StylusLoader.js')
   },
   output : {
     path : path.resolve(__dirname, 'dist'),
@@ -23,6 +24,13 @@ module.exports = {
         use : ExtractTextPlugin.extract({
           fallback : 'style-loader',
           use : ['css-loader', 'sass-loader']
+        })
+      },
+      {
+        test : /\.styl$/,
+        use : ExtractTextPlugin.extract({
+          fallback : 'style-loader',
+          use : ['css-loader', 'stylus-loader']
         })
       },
       {
