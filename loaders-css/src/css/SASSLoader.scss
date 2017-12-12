@@ -1,0 +1,25 @@
+$FSize: 10vh;
+$colorSASS: #CF649A;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #303030;
+  color: #FFFFFF;
+  height: 100vh;
+  margin : 0;
+  font-size: $FSize; 
+  font-family: 'Arial'
+}
+
+.title{
+  font-size: $FSize/2;
+}
+
+.sass-style{
+  font-style: italic;
+  color: $colorSASS;
+  font-size: $FSize/2;
+}

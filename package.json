@@ -12,7 +12,8 @@
     "build:babel:es2015": "webpack --config ./babel-loader-es2015/webpack.config.js",
     "build:url-loader": "webpack --config ./url-loader/webpack.config.js",
     "build:json-loader": "webpack --config ./json-loader/webpack.config.js",
-    "build:reactjs": "webpack --config ./react-js/webpack.config.js"
+    "build:reactjs": "webpack --config ./react-js/webpack.config.js",
+    "build:loaders:css": "webpack --config ./loaders-css/webpack.config.js"
   },
   "author": "Wilder Lizama <wilder.lizama@gmail.com>",
   "license": "MIT",
@@ -25,6 +26,8 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
     "json-loader": "^0.5.7",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
