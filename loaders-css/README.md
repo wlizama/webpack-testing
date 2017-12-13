@@ -6,3 +6,5 @@ info Stylus loader [aqui](https://github.com/shama/stylus-loader)
 
 info Less loader [aqui](https://github.com/webpack-contrib/less-loader)
 
+info PostCSS loader [aqui](https://github.com/postcss/postcss-loader)
+

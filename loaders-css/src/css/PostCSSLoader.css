@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #43AC81;
+  color: #FFFFFF;
+  height: 100vh;
+  margin : 0;
+  font-size: 40px; 
+  font-family: 'Arial'
+}
+
+h1{
+  font-size: .5em;
+}
+
+span{
+  font-style: italic;
+  color: #3E3E3E;
+  font-size: .5em;
+}

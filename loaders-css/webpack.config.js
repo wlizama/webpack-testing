@@ -5,7 +5,8 @@ module.exports = {
   entry : {
     SASSLoader  : path.resolve(__dirname, 'src/js/SASSLoader.js'),
     StylusLoader: path.resolve(__dirname, 'src/js/StylusLoader.js'),
-    LessLoader: path.resolve(__dirname, 'src/js/LessLoader.js')
+    LessLoader: path.resolve(__dirname, 'src/js/LessLoader.js'),
+    PostCSSLoader: path.resolve(__dirname, 'src/js/PostCSSLoader.js')
   },
   output : {
     path : path.resolve(__dirname, 'dist'),
@@ -16,8 +17,16 @@ module.exports = {
       {
         test : /\.css$/,
         use : ExtractTextPlugin.extract({
-          fallback : 'style-loader',
-          use : 'css-loader'
+          use : [
+            {
+              loader : 'css-loader',
+              options : {
+                modules : true,
+                importLoaders : 1
+              }
+            },
+            'postcss-loader'
+          ]
         })
       },
       {
